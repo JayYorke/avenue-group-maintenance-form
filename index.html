@@ -339,7 +339,6 @@
                         </div>
                     </div>
 
-                    <!-- Continue with similar structure for remaining interior items -->
                     <div class="checklist-item">
                         <div class="item-title">3. Thermostat</div>
                         <p style="margin-bottom: 15px; color: #6c757d;">Verify display works and temperature reading seems accurate</p>
@@ -394,33 +393,26 @@
                         </div>
                     </div>
 
-                    <!-- Note: For brevity, I'm showing the pattern for the first few items. The actual form would include all 13 interior items -->
-                </div>
-
-                <!-- Exterior Checks Section -->
-                <div class="section">
-                    <h2 class="section-title">Exterior Checks (~5 minutes)</h2>
-
                     <div class="checklist-item">
-                        <div class="item-title">1. Entry Walkways & Steps</div>
-                        <p style="margin-bottom: 15px; color: #6c757d;">Inspect for cracks, loose railings, or safety hazards</p>
+                        <div class="item-title">4. Water Heater</div>
+                        <p style="margin-bottom: 15px; color: #6c757d;">Visual inspection for leaks, corrosion, or unusual noises around tank</p>
                         
                         <div class="status-options">
                             <div class="status-option">
-                                <input type="radio" id="walkways_satisfactory" name="walkways_status" value="satisfactory">
-                                <label for="walkways_satisfactory">Satisfactory</label>
+                                <input type="radio" id="waterheater_satisfactory" name="waterheater_status" value="satisfactory">
+                                <label for="waterheater_satisfactory">Satisfactory</label>
                             </div>
                             <div class="status-option">
-                                <input type="radio" id="walkways_corrected" name="walkways_status" value="corrected">
-                                <label for="walkways_corrected">Corrected Onsite</label>
+                                <input type="radio" id="waterheater_corrected" name="waterheater_status" value="corrected">
+                                <label for="waterheater_corrected">Corrected Onsite</label>
                             </div>
                             <div class="status-option">
-                                <input type="radio" id="walkways_replaced" name="walkways_status" value="replaced">
-                                <label for="walkways_replaced">Replaced Onsite</label>
+                                <input type="radio" id="waterheater_replaced" name="waterheater_status" value="replaced">
+                                <label for="waterheater_replaced">Replaced Onsite</label>
                             </div>
                             <div class="status-option">
-                                <input type="radio" id="walkways_additional" name="walkways_status" value="additional">
-                                <label for="walkways_additional">Requires Additional Visit</label>
+                                <input type="radio" id="waterheater_additional" name="waterheater_status" value="additional">
+                                <label for="waterheater_additional">Requires Additional Visit</label>
                             </div>
                         </div>
 
@@ -428,101 +420,616 @@
                             <div class="responsibility-title">Responsibility:</div>
                             <div class="responsibility-options">
                                 <div class="status-option">
-                                    <input type="radio" id="walkways_tenant" name="walkways_responsibility" value="tenant">
-                                    <label for="walkways_tenant">Tenant Charge</label>
+                                    <input type="radio" id="waterheater_tenant" name="waterheater_responsibility" value="tenant">
+                                    <label for="waterheater_tenant">Tenant Charge</label>
                                 </div>
                                 <div class="status-option">
-                                    <input type="radio" id="walkways_owner" name="walkways_responsibility" value="owner">
-                                    <label for="walkways_owner">Owner Charge</label>
+                                    <input type="radio" id="waterheater_owner" name="waterheater_responsibility" value="owner">
+                                    <label for="waterheater_owner">Owner Charge</label>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="pricing-section" id="walkways_pricing">
+                        <div class="pricing-section" id="waterheater_pricing">
                             <div class="pricing-title">Select Service Price:</div>
-                            <select class="pricing-select" name="walkways_price">
+                            <select class="pricing-select" name="waterheater_price">
                                 <option value="">Select price...</option>
-                                <option value="45">Minor Crack Repair - $45</option>
-                                <option value="85">Railing Tightening - $85</option>
-                                <option value="125">Step Repair - $125</option>
-                                <option value="200">Walkway Section Replacement - $200</option>
+                                <option value="45">Minor Leak Repair - $45</option>
+                                <option value="85">Temperature & Pressure Relief Valve - $85</option>
+                                <option value="125">Heating Element Replacement - $125</option>
+                                <option value="200">Professional Water Heater Service - $200</option>
                             </select>
                         </div>
 
-                        <div class="notes-section" id="walkways_notes">
-                            <label for="walkways_notes_text" style="display: block; margin-bottom: 5px; font-weight: 600;">Notes:</label>
-                            <textarea class="notes-textarea" name="walkways_notes_text" placeholder="Please describe the issue and action taken..."></textarea>
+                        <div class="notes-section" id="waterheater_notes">
+                            <label for="waterheater_notes_text" style="display: block; margin-bottom: 5px; font-weight: 600;">Notes:</label>
+                            <textarea class="notes-textarea" name="waterheater_notes_text" placeholder="Please describe the issue and action taken..."></textarea>
                         </div>
                     </div>
 
-                    <!-- Note: Similar pattern would continue for all 7 exterior items -->
-                </div>
+                    <div class="checklist-item">
+                        <div class="item-title">5. Sinks & Faucets</div>
+                        <p style="margin-bottom: 15px; color: #6c757d;">Run water briefly; check for leaks, drips, or notably slow drainage</p>
+                        
+                        <div class="status-options">
+                            <div class="status-option">
+                                <input type="radio" id="sinks_satisfactory" name="sinks_status" value="satisfactory">
+                                <label for="sinks_satisfactory">Satisfactory</label>
+                            </div>
+                            <div class="status-option">
+                                <input type="radio" id="sinks_corrected" name="sinks_status" value="corrected">
+                                <label for="sinks_corrected">Corrected Onsite</label>
+                            </div>
+                            <div class="status-option">
+                                <input type="radio" id="sinks_replaced" name="sinks_status" value="replaced">
+                                <label for="sinks_replaced">Replaced Onsite</label>
+                            </div>
+                            <div class="status-option">
+                                <input type="radio" id="sinks_additional" name="sinks_status" value="additional">
+                                <label for="sinks_additional">Requires Additional Visit</label>
+                            </div>
+                        </div>
 
-                <div class="submit-section">
-                    <button type="submit" class="submit-btn">Submit Maintenance Checklist</button>
-                </div>
-            </form>
-        </div>
+                        <div class="responsibility-section">
+                            <div class="responsibility-title">Responsibility:</div>
+                            <div class="responsibility-options">
+                                <div class="status-option">
+                                    <input type="radio" id="sinks_tenant" name="sinks_responsibility" value="tenant">
+                                    <label for="sinks_tenant">Tenant Charge</label>
+                                </div>
+                                <div class="status-option">
+                                    <input type="radio" id="sinks_owner" name="sinks_responsibility" value="owner">
+                                    <label for="sinks_owner">Owner Charge</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pricing-section" id="sinks_pricing">
+                            <div class="pricing-title">Select Service Price:</div>
+                            <select class="pricing-select" name="sinks_price">
+                                <option value="">Select price...</option>
+                                <option value="35">Drain Cleaning - $35</option>
+                                <option value="55">Faucet Repair - $55</option>
+                                <option value="85">Aerator/Cartridge Replacement - $85</option>
+                                <option value="125">Faucet Replacement - $125</option>
+                            </select>
+                        </div>
+
+                        <div class="notes-section" id="sinks_notes">
+                            <label for="sinks_notes_text" style="display: block; margin-bottom: 5px; font-weight: 600;">Notes:</label>
+                            <textarea class="notes-textarea" name="sinks_notes_text" placeholder="Please describe the issue and action taken..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="checklist-item">
+                        <div class="item-title">6. Under-Sink Areas</div>
+                        <p style="margin-bottom: 15px; color: #6c757d;">Quick visual scan for leaks, water damage, mold, or pest signs</p>
+                        
+                        <div class="status-options">
+                            <div class="status-option">
+                                <input type="radio" id="undersink_satisfactory" name="undersink_status" value="satisfactory">
+                                <label for="undersink_satisfactory">Satisfactory</label>
+                            </div>
+                            <div class="status-option">
+                                <input type="radio" id="undersink_corrected" name="undersink_status" value="corrected">
+                                <label for="undersink_corrected">Corrected Onsite</label>
+                            </div>
+                            <div class="status-option">
+                                <input type="radio" id="undersink_replaced" name="undersink_status" value="replaced">
+                                <label for="undersink_replaced">Replaced Onsite</label>
+                            </div>
+                            <div class="status-option">
+                                <input type="radio" id="undersink_additional" name="undersink_status" value="additional">
+                                <label for="undersink_additional">Requires Additional Visit</label>
+                            </div>
+                        </div>
+
+                        <div class="responsibility-section">
+                            <div class="responsibility-title">Responsibility:</div>
+                            <div class="responsibility-options">
+                                <div class="status-option">
+                                    <input type="radio" id="undersink_tenant" name="undersink_responsibility" value="tenant">
+                                    <label for="undersink_tenant">Tenant Charge</label>
+                                </div>
+                                <div class="status-option">
+                                    <input type="radio" id="undersink_owner" name="undersink_responsibility" value="owner">
+                                    <label for="undersink_owner">Owner Charge</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pricing-section" id="undersink_pricing">
+                            <div class="pricing-title">Select Service Price:</div>
+                            <select class="pricing-select" name="undersink_price">
+                                <option value="">Select price...</option>
+                                <option value="45">Pipe Leak Repair - $45</option>
+                                <option value="75">Mold/Mildew Treatment - $75</option>
+                                <option value="95">Pest Control Application - $95</option>
+                                <option value="150">Water Damage Assessment & Repair - $150</option>
+                            </select>
+                        </div>
+
+                        <div class="notes-section" id="undersink_notes">
+                            <label for="undersink_notes_text" style="display: block; margin-bottom: 5px; font-weight: 600;">Notes:</label>
+                            <textarea class="notes-textarea" name="undersink_notes_text" placeholder="Please describe the issue and action taken..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="checklist-item">
+                        <div class="item-title">7. Toilets</div>
+                        <p style="margin-bottom: 15px; color: #6c757d;">Flush and ensure proper operation without continuous running or base leaks</p>
+                        
+                        <div class="status-options">
+                            <div class="status-option">
+                                <input type="radio" id="toilets_satisfactory" name="toilets_status" value="satisfactory">
+                                <label for="toilets_satisfactory">Satisfactory</label>
+                            </div>
+                            <div class="status-option">
+                                <input type="radio" id="toilets_corrected" name="toilets_status" value="corrected">
+                                <label for="toilets_corrected">Corrected Onsite</label>
+                            </div>
+                            <div class="status-option">
+                                <input type="radio" id="toilets_replaced" name="toilets_status" value="replaced">
+                                <label for="toilets_replaced">Replaced Onsite</label>
+                            </div>
+                            <div class="status-option">
+                                <input type="radio" id="toilets_additional" name="toilets_status" value="additional">
+                                <label for="toilets_additional">Requires Additional Visit</label>
+                            </div>
+                        </div>
+
+                        <div class="responsibility-section">
+                            <div class="responsibility-title">Responsibility:</div>
+                            <div class="responsibility-options">
+                                <div class="status-option">
+                                    <input type="radio" id="toilets_tenant" name="toilets_responsibility" value="tenant">
+                                    <label for="toilets_tenant">Tenant Charge</label>
+                                </div>
+                                <div class="status-option">
+                                    <input type="radio" id="toilets_owner" name="toilets_responsibility" value="owner">
+                                    <label for="toilets_owner">Owner Charge</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pricing-section" id="toilets_pricing">
+                            <div class="pricing-title">Select Service Price:</div>
+                            <select class="pricing-select" name="toilets_price">
+                                <option value="">Select price...</option>
+                                <option value="35">Flapper/Chain Adjustment - $35</option>
+                                <option value="55">Fill Valve Replacement - $55</option>
+                                <option value="75">Wax Ring Replacement - $75</option>
+                                <option value="125">Complete Toilet Repair - $125</option>
+                            </select>
+                        </div>
+
+                        <div class="notes-section" id="toilets_notes">
+                            <label for="toilets_notes_text" style="display: block; margin-bottom: 5px; font-weight: 600;">Notes:</label>
+                            <textarea class="notes-textarea" name="toilets_notes_text" placeholder="Please describe the issue and action taken..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="checklist-item">
+                        <div class="item-title">8. Major Appliances</div>
+                        <p style="margin-bottom: 15px; color: #6c757d;">Quick check that fridge is cooling, no visible damage to stove/dishwasher</p>
+                        
+                        <div class="status-options">
+                            <div class="status-option">
+                                <input type="radio" id="appliances_satisfactory" name="appliances_status" value="satisfactory">
+                                <label for="appliances_satisfactory">Satisfactory</label>
+                            </div>
+                            <div class="status-option">
+                                <input type="radio" id="appliances_corrected" name="appliances_status" value="corrected">
+                                <label for="appliances_corrected">Corrected Onsite</label>
+                            </div>
+                            <div class="status-option">
+                                <input type="radio" id="appliances_replaced" name="appliances_status" value="replaced">
+                                <label for="appliances_replaced">Replaced Onsite</label>
+                            </div>
+                            <div class="status-option">
+                                <input type="radio" id="appliances_additional" name="appliances_status" value="additional">
+                                <label for="appliances_additional">Requires Additional Visit</label>
+                            </div>
+                        </div>
+
+                        <div class="responsibility-section">
+                            <div class="responsibility-title">Responsibility:</div>
+                            <div class="responsibility-options">
+                                <div class="status-option">
+                                    <input type="radio" id="appliances_tenant" name="appliances_responsibility" value="tenant">
+                                    <label for="appliances_tenant">Tenant Charge</label>
+                                </div>
+                                <div class="status-option">
+                                    <input type="radio" id="appliances_owner" name="appliances_responsibility" value="owner">
+                                    <label for="appliances_owner">Owner Charge</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pricing-section" id="appliances_pricing">
+                            <div class="pricing-title">Select Service Price:</div>
+                            <select class="pricing-select" name="appliances_price">
+                                <option value="">Select price...</option>
+                                <option value="65">Minor Appliance Repair - $65</option>
+                                <option value="125">Appliance Service Call - $125</option>
+                                <option value="200">Professional Appliance Diagnosis - $200</option>
+                                <option value="300">Appliance Replacement Installation - $300</option>
+                            </select
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Avenue Group Property Maintenance Checklist</title>
+  <style>
+    body { font-family: sans-serif; background: #f1f1f1; padding: 20px; }
+    .container { background: white; max-width: 900px; margin: auto; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    .header h1 { margin: 0; color: #2c3e50; }
+    .header p { margin: 0 0 20px 0; color: #555; }
+    .section-title { font-size: 1.2em; margin: 30px 0 15px; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
+    .checklist-item { border: 1px solid #ccc; border-radius: 8px; padding: 20px; margin-bottom: 20px; background: #fafafa; }
+    .item-title { font-weight: bold; margin-bottom: 5px; }
+    .status-options, .responsibility-options { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+    label { display: inline-block; background: #fff; border: 1px solid #ccc; padding: 8px 12px; border-radius: 5px; cursor: pointer; }
+    input[type="radio"] { display: none; }
+    input[type="radio"]:checked + label { background: #3498db; color: white; border-color: #3498db; }
+    .pricing-section, .notes-section { margin-top: 15px; }
+    select, textarea { width: 100%; padding: 8px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc; }
+    .submit-section { text-align: center; margin-top: 30px; }
+    .submit-btn { background: #2ecc71; color: white; padding: 10px 30px; border: none; border-radius: 25px; font-size: 1rem; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Avenue Group Real Estate</h1>
+      <p>Property Maintenance Checklist</p>
     </div>
+    <form>
+      <div class="time-estimate"><strong>Estimated Time: 10-15 minutes</strong> | Tools Needed: None (visual/basic operational checks only)</div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('maintenanceForm');
-            
-            // Handle status changes to show/hide pricing and notes sections
-            form.addEventListener('change', function(e) {
-                if (e.target.type === 'radio' && e.target.name.endsWith('_status')) {
-                    const itemName = e.target.name.replace('_status', '');
-                    const pricingSection = document.getElementById(itemName + '_pricing');
-                    const notesSection = document.getElementById(itemName + '_notes');
-                    
-                    // Show pricing for corrected or replaced
-                    if (e.target.value === 'corrected' || e.target.value === 'replaced') {
-                        pricingSection.classList.add('show');
-                    } else {
-                        pricingSection.classList.remove('show');
-                    }
-                    
-                    // Show notes for anything other than satisfactory
-                    if (e.target.value !== 'satisfactory') {
-                        notesSection.classList.add('show');
-                    } else {
-                        notesSection.classList.remove('show');
-                    }
-                }
-            });
+      <div class="section-title">Interior Checks (~8-10 minutes)</div>
 
-            // Handle form submission
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Collect all form data
-                const formData = new FormData(form);
-                const data = {};
-                
-                for (let [key, value] of formData.entries()) {
-                    data[key] = value;
-                }
-                
-                // Send data to N8N webhook
-                fetch('/webhook/maintenance-checklist', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(data)
-                })
-                .then(response => response.json())
-                .then(data => {
-                    alert('Maintenance checklist submitted successfully!');
-                    form.reset();
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    alert('Error submitting checklist. Please try again.');
-                });
-            });
-        });
-    </script>
+      <div class="checklist-item">
+        <div class="item-title">9. Primary Lights & Switches</div>
+        <p>Test main room lighting to ensure electrical function</p>
+        <div class="status-options">
+          <input type="radio" id="item9_ok" name="item9_status" value="satisfactory"><label for="item9_ok">Satisfactory</label>
+          <input type="radio" id="item9_fix" name="item9_status" value="corrected"><label for="item9_fix">Corrected Onsite</label>
+          <input type="radio" id="item9_replace" name="item9_status" value="replaced"><label for="item9_replace">Replaced</label>
+          <input type="radio" id="item9_visit" name="item9_status" value="additional"><label for="item9_visit">Requires Visit</label>
+        </div>
+        <div class="responsibility-options">
+          <input type="radio" id="item9_tenant" name="item9_resp" value="tenant"><label for="item9_tenant">Tenant Charge</label>
+          <input type="radio" id="item9_owner" name="item9_resp" value="owner"><label for="item9_owner">Owner Charge</label>
+        </div>
+        <div class="pricing-section">
+          <label>Service Price:</label>
+          <select name="item9_price">
+            <option value="">Select...</option>
+            <option value="25">$25</option>
+            <option value="50">$50</option>
+            <option value="75">$75</option>
+          </select>
+        </div>
+        <div class="notes-section">
+          <label>Notes:</label>
+          <textarea name="item9_notes" placeholder="Details..."></textarea>
+        </div>
+      </div>
+    
+      <div class="checklist-item">
+        <div class="item-title">10. Entry Doors & Main Windows</div>
+        <p>Verify doors latch/lock securely and windows close properly</p>
+        <div class="status-options">
+          <input type="radio" id="item10_ok" name="item10_status" value="satisfactory"><label for="item10_ok">Satisfactory</label>
+          <input type="radio" id="item10_fix" name="item10_status" value="corrected"><label for="item10_fix">Corrected Onsite</label>
+          <input type="radio" id="item10_replace" name="item10_status" value="replaced"><label for="item10_replace">Replaced</label>
+          <input type="radio" id="item10_visit" name="item10_status" value="additional"><label for="item10_visit">Requires Visit</label>
+        </div>
+        <div class="responsibility-options">
+          <input type="radio" id="item10_tenant" name="item10_resp" value="tenant"><label for="item10_tenant">Tenant Charge</label>
+          <input type="radio" id="item10_owner" name="item10_resp" value="owner"><label for="item10_owner">Owner Charge</label>
+        </div>
+        <div class="pricing-section">
+          <label>Service Price:</label>
+          <select name="item10_price">
+            <option value="">Select...</option>
+            <option value="25">$25</option>
+            <option value="50">$50</option>
+            <option value="75">$75</option>
+          </select>
+        </div>
+        <div class="notes-section">
+          <label>Notes:</label>
+          <textarea name="item10_notes" placeholder="Details..."></textarea>
+        </div>
+      </div>
+    
+      <div class="checklist-item">
+        <div class="item-title">11. Walls & Ceilings</div>
+        <p>Scan for new cracks, water stains, or visible mold growth</p>
+        <div class="status-options">
+          <input type="radio" id="item11_ok" name="item11_status" value="satisfactory"><label for="item11_ok">Satisfactory</label>
+          <input type="radio" id="item11_fix" name="item11_status" value="corrected"><label for="item11_fix">Corrected Onsite</label>
+          <input type="radio" id="item11_replace" name="item11_status" value="replaced"><label for="item11_replace">Replaced</label>
+          <input type="radio" id="item11_visit" name="item11_status" value="additional"><label for="item11_visit">Requires Visit</label>
+        </div>
+        <div class="responsibility-options">
+          <input type="radio" id="item11_tenant" name="item11_resp" value="tenant"><label for="item11_tenant">Tenant Charge</label>
+          <input type="radio" id="item11_owner" name="item11_resp" value="owner"><label for="item11_owner">Owner Charge</label>
+        </div>
+        <div class="pricing-section">
+          <label>Service Price:</label>
+          <select name="item11_price">
+            <option value="">Select...</option>
+            <option value="25">$25</option>
+            <option value="50">$50</option>
+            <option value="75">$75</option>
+          </select>
+        </div>
+        <div class="notes-section">
+          <label>Notes:</label>
+          <textarea name="item11_notes" placeholder="Details..."></textarea>
+        </div>
+      </div>
+    
+      <div class="checklist-item">
+        <div class="item-title">12. High-Traffic Flooring</div>
+        <p>Check main walkways for damage, loose tiles, or trip hazards</p>
+        <div class="status-options">
+          <input type="radio" id="item12_ok" name="item12_status" value="satisfactory"><label for="item12_ok">Satisfactory</label>
+          <input type="radio" id="item12_fix" name="item12_status" value="corrected"><label for="item12_fix">Corrected Onsite</label>
+          <input type="radio" id="item12_replace" name="item12_status" value="replaced"><label for="item12_replace">Replaced</label>
+          <input type="radio" id="item12_visit" name="item12_status" value="additional"><label for="item12_visit">Requires Visit</label>
+        </div>
+        <div class="responsibility-options">
+          <input type="radio" id="item12_tenant" name="item12_resp" value="tenant"><label for="item12_tenant">Tenant Charge</label>
+          <input type="radio" id="item12_owner" name="item12_resp" value="owner"><label for="item12_owner">Owner Charge</label>
+        </div>
+        <div class="pricing-section">
+          <label>Service Price:</label>
+          <select name="item12_price">
+            <option value="">Select...</option>
+            <option value="25">$25</option>
+            <option value="50">$50</option>
+            <option value="75">$75</option>
+          </select>
+        </div>
+        <div class="notes-section">
+          <label>Notes:</label>
+          <textarea name="item12_notes" placeholder="Details..."></textarea>
+        </div>
+      </div>
+    
+      <div class="checklist-item">
+        <div class="item-title">13. Electrical Outlets</div>
+        <p>Visual inspection of one outlet per room for damage or scorch marks</p>
+        <div class="status-options">
+          <input type="radio" id="item13_ok" name="item13_status" value="satisfactory"><label for="item13_ok">Satisfactory</label>
+          <input type="radio" id="item13_fix" name="item13_status" value="corrected"><label for="item13_fix">Corrected Onsite</label>
+          <input type="radio" id="item13_replace" name="item13_status" value="replaced"><label for="item13_replace">Replaced</label>
+          <input type="radio" id="item13_visit" name="item13_status" value="additional"><label for="item13_visit">Requires Visit</label>
+        </div>
+        <div class="responsibility-options">
+          <input type="radio" id="item13_tenant" name="item13_resp" value="tenant"><label for="item13_tenant">Tenant Charge</label>
+          <input type="radio" id="item13_owner" name="item13_resp" value="owner"><label for="item13_owner">Owner Charge</label>
+        </div>
+        <div class="pricing-section">
+          <label>Service Price:</label>
+          <select name="item13_price">
+            <option value="">Select...</option>
+            <option value="25">$25</option>
+            <option value="50">$50</option>
+            <option value="75">$75</option>
+          </select>
+        </div>
+        <div class="notes-section">
+          <label>Notes:</label>
+          <textarea name="item13_notes" placeholder="Details..."></textarea>
+        </div>
+      </div>
+    <div class="section-title">Exterior Checks (~5 minutes)</div>
+      <div class="checklist-item">
+        <div class="item-title">14. Entry Walkways & Steps</div>
+        <p>Inspect for cracks, loose railings, or safety hazards</p>
+        <div class="status-options">
+          <input type="radio" id="item14_ok" name="item14_status" value="satisfactory"><label for="item14_ok">Satisfactory</label>
+          <input type="radio" id="item14_fix" name="item14_status" value="corrected"><label for="item14_fix">Corrected Onsite</label>
+          <input type="radio" id="item14_replace" name="item14_status" value="replaced"><label for="item14_replace">Replaced</label>
+          <input type="radio" id="item14_visit" name="item14_status" value="additional"><label for="item14_visit">Requires Visit</label>
+        </div>
+        <div class="responsibility-options">
+          <input type="radio" id="item14_tenant" name="item14_resp" value="tenant"><label for="item14_tenant">Tenant Charge</label>
+          <input type="radio" id="item14_owner" name="item14_resp" value="owner"><label for="item14_owner">Owner Charge</label>
+        </div>
+        <div class="pricing-section">
+          <label>Service Price:</label>
+          <select name="item14_price">
+            <option value="">Select...</option>
+            <option value="25">$25</option>
+            <option value="50">$50</option>
+            <option value="75">$75</option>
+          </select>
+        </div>
+        <div class="notes-section">
+          <label>Notes:</label>
+          <textarea name="item14_notes" placeholder="Details..."></textarea>
+        </div>
+      </div>
+    
+      <div class="checklist-item">
+        <div class="item-title">15. Roof & Siding (Ground View)</div>
+        <p>Look for missing shingles, siding damage, or obvious issues</p>
+        <div class="status-options">
+          <input type="radio" id="item15_ok" name="item15_status" value="satisfactory"><label for="item15_ok">Satisfactory</label>
+          <input type="radio" id="item15_fix" name="item15_status" value="corrected"><label for="item15_fix">Corrected Onsite</label>
+          <input type="radio" id="item15_replace" name="item15_status" value="replaced"><label for="item15_replace">Replaced</label>
+          <input type="radio" id="item15_visit" name="item15_status" value="additional"><label for="item15_visit">Requires Visit</label>
+        </div>
+        <div class="responsibility-options">
+          <input type="radio" id="item15_tenant" name="item15_resp" value="tenant"><label for="item15_tenant">Tenant Charge</label>
+          <input type="radio" id="item15_owner" name="item15_resp" value="owner"><label for="item15_owner">Owner Charge</label>
+        </div>
+        <div class="pricing-section">
+          <label>Service Price:</label>
+          <select name="item15_price">
+            <option value="">Select...</option>
+            <option value="25">$25</option>
+            <option value="50">$50</option>
+            <option value="75">$75</option>
+          </select>
+        </div>
+        <div class="notes-section">
+          <label>Notes:</label>
+          <textarea name="item15_notes" placeholder="Details..."></textarea>
+        </div>
+      </div>
+    
+      <div class="checklist-item">
+        <div class="item-title">16. Gutters & Downspouts</div>
+        <p>Check for visible blockages, detachment, or overflow damage</p>
+        <div class="status-options">
+          <input type="radio" id="item16_ok" name="item16_status" value="satisfactory"><label for="item16_ok">Satisfactory</label>
+          <input type="radio" id="item16_fix" name="item16_status" value="corrected"><label for="item16_fix">Corrected Onsite</label>
+          <input type="radio" id="item16_replace" name="item16_status" value="replaced"><label for="item16_replace">Replaced</label>
+          <input type="radio" id="item16_visit" name="item16_status" value="additional"><label for="item16_visit">Requires Visit</label>
+        </div>
+        <div class="responsibility-options">
+          <input type="radio" id="item16_tenant" name="item16_resp" value="tenant"><label for="item16_tenant">Tenant Charge</label>
+          <input type="radio" id="item16_owner" name="item16_resp" value="owner"><label for="item16_owner">Owner Charge</label>
+        </div>
+        <div class="pricing-section">
+          <label>Service Price:</label>
+          <select name="item16_price">
+            <option value="">Select...</option>
+            <option value="25">$25</option>
+            <option value="50">$50</option>
+            <option value="75">$75</option>
+          </select>
+        </div>
+        <div class="notes-section">
+          <label>Notes:</label>
+          <textarea name="item16_notes" placeholder="Details..."></textarea>
+        </div>
+      </div>
+    
+      <div class="checklist-item">
+        <div class="item-title">17. HVAC Unit & Vents</div>
+        <p>Ensure outdoor unit is clear of debris and vents are unobstructed</p>
+        <div class="status-options">
+          <input type="radio" id="item17_ok" name="item17_status" value="satisfactory"><label for="item17_ok">Satisfactory</label>
+          <input type="radio" id="item17_fix" name="item17_status" value="corrected"><label for="item17_fix">Corrected Onsite</label>
+          <input type="radio" id="item17_replace" name="item17_status" value="replaced"><label for="item17_replace">Replaced</label>
+          <input type="radio" id="item17_visit" name="item17_status" value="additional"><label for="item17_visit">Requires Visit</label>
+        </div>
+        <div class="responsibility-options">
+          <input type="radio" id="item17_tenant" name="item17_resp" value="tenant"><label for="item17_tenant">Tenant Charge</label>
+          <input type="radio" id="item17_owner" name="item17_resp" value="owner"><label for="item17_owner">Owner Charge</label>
+        </div>
+        <div class="pricing-section">
+          <label>Service Price:</label>
+          <select name="item17_price">
+            <option value="">Select...</option>
+            <option value="25">$25</option>
+            <option value="50">$50</option>
+            <option value="75">$75</option>
+          </select>
+        </div>
+        <div class="notes-section">
+          <label>Notes:</label>
+          <textarea name="item17_notes" placeholder="Details..."></textarea>
+        </div>
+      </div>
+    
+      <div class="checklist-item">
+        <div class="item-title">18. Exterior Faucets</div>
+        <p>Visual check for leaks, freeze damage, or hose connection issues</p>
+        <div class="status-options">
+          <input type="radio" id="item18_ok" name="item18_status" value="satisfactory"><label for="item18_ok">Satisfactory</label>
+          <input type="radio" id="item18_fix" name="item18_status" value="corrected"><label for="item18_fix">Corrected Onsite</label>
+          <input type="radio" id="item18_replace" name="item18_status" value="replaced"><label for="item18_replace">Replaced</label>
+          <input type="radio" id="item18_visit" name="item18_status" value="additional"><label for="item18_visit">Requires Visit</label>
+        </div>
+        <div class="responsibility-options">
+          <input type="radio" id="item18_tenant" name="item18_resp" value="tenant"><label for="item18_tenant">Tenant Charge</label>
+          <input type="radio" id="item18_owner" name="item18_resp" value="owner"><label for="item18_owner">Owner Charge</label>
+        </div>
+        <div class="pricing-section">
+          <label>Service Price:</label>
+          <select name="item18_price">
+            <option value="">Select...</option>
+            <option value="25">$25</option>
+            <option value="50">$50</option>
+            <option value="75">$75</option>
+          </select>
+        </div>
+        <div class="notes-section">
+          <label>Notes:</label>
+          <textarea name="item18_notes" placeholder="Details..."></textarea>
+        </div>
+      </div>
+    
+      <div class="checklist-item">
+        <div class="item-title">19. Foundation & Pest Signs</div>
+        <p>Quick scan for obvious pest activity, nests, or foundation concerns</p>
+        <div class="status-options">
+          <input type="radio" id="item19_ok" name="item19_status" value="satisfactory"><label for="item19_ok">Satisfactory</label>
+          <input type="radio" id="item19_fix" name="item19_status" value="corrected"><label for="item19_fix">Corrected Onsite</label>
+          <input type="radio" id="item19_replace" name="item19_status" value="replaced"><label for="item19_replace">Replaced</label>
+          <input type="radio" id="item19_visit" name="item19_status" value="additional"><label for="item19_visit">Requires Visit</label>
+        </div>
+        <div class="responsibility-options">
+          <input type="radio" id="item19_tenant" name="item19_resp" value="tenant"><label for="item19_tenant">Tenant Charge</label>
+          <input type="radio" id="item19_owner" name="item19_resp" value="owner"><label for="item19_owner">Owner Charge</label>
+        </div>
+        <div class="pricing-section">
+          <label>Service Price:</label>
+          <select name="item19_price">
+            <option value="">Select...</option>
+            <option value="25">$25</option>
+            <option value="50">$50</option>
+            <option value="75">$75</option>
+          </select>
+        </div>
+        <div class="notes-section">
+          <label>Notes:</label>
+          <textarea name="item19_notes" placeholder="Details..."></textarea>
+        </div>
+      </div>
+    
+      <div class="checklist-item">
+        <div class="item-title">20. Garage Door (if applicable)</div>
+        <p>Test operation and safety sensor functionality</p>
+        <div class="status-options">
+          <input type="radio" id="item20_ok" name="item20_status" value="satisfactory"><label for="item20_ok">Satisfactory</label>
+          <input type="radio" id="item20_fix" name="item20_status" value="corrected"><label for="item20_fix">Corrected Onsite</label>
+          <input type="radio" id="item20_replace" name="item20_status" value="replaced"><label for="item20_replace">Replaced</label>
+          <input type="radio" id="item20_visit" name="item20_status" value="additional"><label for="item20_visit">Requires Visit</label>
+        </div>
+        <div class="responsibility-options">
+          <input type="radio" id="item20_tenant" name="item20_resp" value="tenant"><label for="item20_tenant">Tenant Charge</label>
+          <input type="radio" id="item20_owner" name="item20_resp" value="owner"><label for="item20_owner">Owner Charge</label>
+        </div>
+        <div class="pricing-section">
+          <label>Service Price:</label>
+          <select name="item20_price">
+            <option value="">Select...</option>
+            <option value="25">$25</option>
+            <option value="50">$50</option>
+            <option value="75">$75</option>
+          </select>
+        </div>
+        <div class="notes-section">
+          <label>Notes:</label>
+          <textarea name="item20_notes" placeholder="Details..."></textarea>
+        </div>
+      </div>
+    
+      <div class="submit-section">
+        <button type="submit" class="submit-btn">Submit Checklist</button>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
